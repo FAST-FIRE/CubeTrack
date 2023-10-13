@@ -61,7 +61,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2302.01036.pdf"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -71,17 +71,17 @@
               </span>
               <!-- arxiv Link.  -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2302.01036"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv<（敬请期待）</span>
                 </a>
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/fast-fire-crepes/crepes_ws"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -98,39 +98,24 @@
   </div>
 </section>
 
-<!-- First Video -->
+<!-- 摘要上面视频 -->
 <section class="teaser">
-    <div class="container">
-        <center>
-            <div class="columns is-centered">
-                <div class="column is-five-sixths">
-                <video id="teaser_video" width=40% muted autoplay loop style="border-radius:10px; ">
-                    <source src="static/videos/履带车自主导航爬楼.mp4" type="video/mp4">
-                </video>
-                <video id="teaser_video" width=40% muted autoplay loop style="border-radius:10px; ">
-                    <source src="static/videos/仅上楼.mp4" type="video/mp4">
-                </video>
-                </div>
-            </div>
-        </center>
-    </div>
   <div class="container">
-        <center>
-            <div class="columns is-centered">
-                <div class="column is-five-sixths">
-                    <video id="teaser_video" width=40% muted autoplay loop style="border-radius:10px; ">
-                        <source src="static/videos/multi-robots.mp4" type="video/mp4">
-                    </video>
-                    <video id="teaser_video" width=40% muted autoplay loop style="border-radius:10px; ">
-                        <source src="static/videos/long-distance.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </center>
+      <center>
+          <div class="columns is-centered">
+              <div class="column is-five-sixths">
+              <video id="teaser_video" width=50% muted autoplay loop style="border-radius:10px; ">
+                  <source src="static/videos/履带车自主导航爬楼.mp4" type="video/mp4">
+              </video>
+              </div>
+          </div>
+      </center>
   </div>
+</div>
 </section>
+<!-- 摘要下面视频 -->
 
-<!-- abstract  -->
+<!-- 摘要  -->
 <section class="section">
   <div class="container">
     <!-- Abstract. -->
@@ -138,213 +123,103 @@
       <div class="column is-three-fifths">
         <h2 class="title is-3">摘要</h2>
         <div class="content has-text-justified">
-          <p>
-            机器人的相互定位在多机器人合作中起着关键作用。本项目提出了一种新型的专注于多机器人六自由度(DOF)相对姿态的估计系统 <font color="red"><i><b>CREPES</b></i></font>。
+          <p style="line-height:200%;text-indent: 2em;">
+            <font color="red"><b>CubeTrack(酷行)变形履带机器人</b></font>
+            包括履带式移动车体和轻巧作业机械臂两部分。
           </p>
-          <p>
-            CREPES硬件结构设计紧凑，其硬件结构包含红外LED，鱼眼相机，超宽带测距模块（UWB）和惯性测量单元（IMU）。
-            通过利用红外光通信，实现相机视觉检测和UWB测距之间的数据关联。
-            通过相机解算的方向信息与UWB测距数据的融合可以获取CREPES相对的3-DOF位置数据。
-            结合相邻CREPES设备的相对位置和IMU重力方向约束，我们可以从一帧传感器测量数据中估计出6-DOF的相对姿势。
+          <p style="line-height:200%;text-indent: 2em;">
+            履带式移动车体采用变形履带结构，其特有的三角形变形结构，可在维持较小体积的状态下，顺利通过狭窄区域以及障碍路面，包括沙石瓦砾、50cm沟壑、40°斜坡、上下楼梯以及积水坑洼地面等。车体的移动速度不小于1.5m/s，可迅速地到达目的地，且左右履带为差分控制，可完成顺逆时针的原地360°旋转，保证控制的便捷性与灵活性，进一步提高了复杂环境的适应与通过能力。
+            作业机械臂由五自由度机械臂和单自由度机械手构成，该机械手采用柔性设计，材质柔软，具有一定的自适应性，在抓取物体时能对被抓物体形成包络。从而具有灵活的作业能力，可以进行自主开关门、移除路障、高处取样、灾后救援等操作。
           </p>
-          <p>
-            此外，CREPES包含一个基于误差状态卡尔曼滤波器（ESKF）的估计器，以提高系统的准确性和稳健性。当有多个邻居时，引入姿势图优化（PGO）算法，以进一步提高系统精度。
-            我们进行了大量的实验来证明CREPES在双机协作、集群编队应用中的准确性，以及在复杂定位环境下的性能。
+          <p style="line-height:200%;text-indent: 2em;">
+            作业机械臂由五自由度机械臂和单自由度机械手构成，该机械手采用柔性设计，材质柔软，具有一定的自适应性，在抓取物体时能对被抓物体形成包络。从而具有灵活的作业能力，可以进行自主开关门、移除路障、高处取样、灾后救援等操作。
           </p>
         </div>
       </div>
     </div>
-<!--/ Abstract. -->
+<!--/ 摘要 -->
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">论文视频</h2>
-          <center>
-            <video width="75%" muted autoplay loop style="border-radius:10px; ">
-                <source src="static/videos/Crepes_video.mp4" type="video/mp4"></source>
-                <source src="static/videos/Crepes_video.ogg" type="video/ogg"></source>
-                您的浏览器不支持该视频格式
-            </video>
-          </center>
-      </div>
-    </div>
-    <!--/ Paper video. -->
+<!-- 摘要下面视频 -->
+<section class="teaser">
+  <div class="container">
+      
   </div>
+<div class="container">
+      <center>
+        <div class="columns is-centered">
+          <div class="column is-five-sixths">
+          <video id="teaser_video" width=50% muted autoplay loop style="border-radius:10px; ">
+              <source src="static/videos/仅上楼.mp4" type="video/mp4">
+          </video>
+          </div>
+      </div>
+      </center>
+</div>
 </section>
+<!-- 摘要下面视频 -->
 
-<!-- System architecture  -->
+<!-- 机械介绍  -->
 <section class="section">
   <div class="container">
+    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-three-fifths">
-        <h2 class="title is-3">CREPES的硬件设计及软件架构</h2>
-        <div class="content has-text-justified" >
-          <p>
-            CREPES的硬件系统包含一个惯性测量单元（IMU），一个超宽带测距模块（UWB），一个工业相机和一组红外LED。        
-            相对位姿的直接检测算法采集相邻设备的ID、位置向量（视觉检测）、相对距离（来自UWB）和惯性检测单元IMU数据，用于解算相邻设备位姿的原始估计。         
-            然后，ESKF算法模块使用惯性单元IMU数据对原始估计位姿进行滤波。当周围有多个邻居CREPES时，将采用PGO模块进一步提高位姿估计性能。
+        <h2 class="title is-3">变构型履带式结构</h2>
+        <div class="content has-text-justified">
+          <p style="line-height:200%;text-indent: 2em;">
+            为了解决机器人在多层环境中进行自主巡检的挑战，本团队精心研发了一款具备高度地形适应能力和变形特性的履带底盘。在高效与稳定的设计理念的指导下，该底盘采用了一种由三个带轮构成的创新性可变形履带模块。其中，两个固定带轮安装在底盘上，而一个运动带轮则能够沿着两个固定带轮的中心轴进行自由旋转。经过详细的数学建模，发现运动带轮按照一个椭圆轨迹运动，而两个固定带轮则恰好分别位于这一椭圆的两个焦点。依据在极坐标中椭圆轨迹与以该椭圆短轴为半径的圆轨迹的距离差，我们巧妙地设计了一种特殊形状的凸轮（如下图1.1所示）。该凸轮装置能够使履带摆臂的长度在不同角度下自动调节，进而改变履带的构型，以极大地提升其在多变和复杂地形中的适应性。具体来说，只需控制履带摆臂的角度，便能改变履带的形状（如下图1.2所示），极大增加了履带机器人越障性能和上下楼梯的稳定性，使得机器人能够轻松跨越高达30cm的台阶，以及在标准楼梯上自由上下行走。这种先进的底盘设计不仅大大提升了机器人在复杂地形中的适应性，还成功地解决了烟草行业巡检所需的跨楼层巡检的难题。
           </p>
+          <div class="columns is-centered has-text-centered">
+            <img src="static/images/履带变形示意图.png" style="width: 75%;" alt="">
+          </div>
         </div>
       </div>
     </div>
+<!--/ 机械介绍 -->
 
-    <div class="columns is-centered has-text-centered">
-      <img src="static/images/system.jpg" style="width: 75%;" alt="">
-    </div>
-  </div>
-</section>
-<!-- End System architecture-->
-
-
-<!-- Hardware iterations -->
+<!-- 程序介绍  -->
 <section class="section">
   <div class="container">
+    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-three-fifths">
-        <h2 class="title is-3">硬件系统迭代</h2>
-        <div class="content has-text-justified" >
-          <p>
-            为了使设备更加便携，减少硬件输出端口，CREPES的硬件经历了四次迭代优化。
-            从CREPES1到CREPES4，最终CREPES4设备的重量、体积和通信距离列示如下。
+        <h2 class="title is-3">全自主导航巡检系统</h2>
+        <div class="content has-text-justified">
+          <p style="line-height:200%;text-indent: 2em;">
+            本项目通过扩展卡尔曼滤波（EKF）方法实现激光雷达点云数据与惯性测量单元（IMU）数据的高效融合，进而构建了精确的激光惯性里程计。每一帧激光点云的位姿被用于全局地图的构建，引入回环检测的技术，通过检测机器人经过相同或者相似的环境，确定机器人当前的位置并校正机器人之前所走过的轨迹，从而提高机器人定位精度和鲁棒性。针对点云数据量庞大导致的存储资源开销问题，采用了iKd-tree数据结构进行优化处理。相较于单一传感器系统，该多传感器融合方案能有效应对环境退化和动态障碍物。
+            在多离散巡检任务点路径规划方面，主要采用基于动态窗口法（DWA）的局部路径规划算法。该算法能针对车辆周围的多个潜在路径进行筛选和优化，进而确定最优且可行的路径。障碍物感知是基于车体坐标系下当前帧局部点云进行的，以实现精准的局部路径规划。
+            为实现跨楼层巡检任务，除预设固定点方式外，也支持直接为给定目标点生成全局路径。全局地图构建阶段首先进行点云地图的栅格化，然后计算其欧几里得距离场（ESDF），以确保路径规划满足安全性约束，避免意外情况如车辆翻倒或碰撞。路径搜索首先通过A*算法进行前端粗略路径生成，在后端则采用基于优化的规划框架，以在三维环境中生成平滑轨迹。这一系列先进技术和方法综合确保了巡检系统的高效性、准确性和可靠性。
           </p>
+          <div class="columns is-centered has-text-centered">
+            <img src="static/images/全自主导航系统.png" style="width: 100%;" alt="">
+          </div>
         </div>
       </div>
     </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <img src="static/images/Hardware_cn.jpg" style="width: 85%;" alt="">
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Hardware iterations -->
+<!--/ 程序介绍 -->
 
-<!-- System error and applications -->
+<!-- /家族化介绍  -->
 <section class="section">
-  <!-- system error -->
   <div class="container">
+    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">CREPES相对位姿估计系统实机测试</h2>
-        <h3 class="title is-4">采用NOKOV动捕系统输出作为真值</h3>
-        <div class="content has-text-justified " >
-          <center>
-            <video width="80%" muted autoplay loop style="border-radius:10px; ">
-              <source src="static/videos/error test.mp4" type="video/mp4"></source>
-              <source src="static/videos/error test.ogg" type="video/ogg"></source>
-              您的浏览器不支持该视频格式
-            </video>
-          </center>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- dynamic and static errors -->
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <!-- static error -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">静态测试误差</h2>
-          <p>
-            双机在静止状态下进行定位。测试距离分别为：2.5米，5米和10米。
-            位置误差的中位数小于<b><font color="red">0.1米</font></b>。
-            姿态误差的中位数小于<b><font color="red">0.4度</font></b>。
-          </p>
-        </div>
-      </div>
-      <!-- dynamic error -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">动态测试误差</h2>
-          <p>
-            双机在运动状态下进行定位。双机运动距离范围在5米至10米。
-            位置误差的中位数小于<b><font color="red">0.1米</font></b>。
-            姿态误差的中位数小于<b><font color="red">2度</font></b>。
-          </p>
-        </div>
-      </div>
-    </div>
- 
-    <div class="columns is-centered">
-      <div class="column">
-        <img src="./static/images/static error.jpg" style="width: 100%;" alt="">
-
-      </div>
-      <div class="column">
-        <img src="./static/images/dynamic error.jpg" style="width: 100%;" alt="">
-      </div>     
-    </div>
-  <!-- End system errors -->
-    
-  <!-- Application. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">CREPES应用</h2>
-        <!-- application1 -->
-        <h3 class="title is-4">极限姿态测试</h3>
+      <div class="column is-three-fifths">
+        <h2 class="title is-3">家族化介绍</h2>
         <div class="content has-text-justified">
-          <center>
-            <video width="100%" muted autoplay loop style="border-radius:10px; ">
-                <source src="static/videos/Big pose.mp4" type="video/mp4"></source>
-                <source src="static/videos/Big pose.ogg" type="video/ogg"></source>
-                您的浏览器不支持该视频格式
-            </video>
-          </center>
-        </div>
-        <!-- application2 -->
-        <h3 class="title is-4">非视距定位场景</h3>
-        <div class="content has-text-justified">
-          <p>
-            在非视距和遮挡情况下，如何实现设备的位姿估计和定位是一个巨大的挑战。
-            该实验中，我们使用五个机器人在存在遮挡的复杂场景下进行定位。下列视频展示了实验中NOKOV动捕系统真值输出和CREPES系统相对定位输出的数据对比。
+          <p style="line-height:200%;text-indent: 2em;">
+            为适应不同地形，不同项目的要求，本团队还设计了多款尺寸的变形履带车，以供选择！
           </p>
-          <center>
-            <video width="95%" muted autoplay loop style="border-radius:10px; ">
-                <source src="static/videos/NLOS.mp4" type="video/mp4"></source>
-                <source src="static/videos/NLOS.ogg" type="video/ogg"></source>
-                您的浏览器不支持该视频格式
-            </video>
-          </center>
-        </div>
-        <!-- application3 -->
-        <h3 class="title is-4">MPC控制器协同应用</h3>
-        <div class="content has-text-justified">
-          <p>
-            地面车辆搭载CREPES设备，并通过遥控控制。无人飞行器搭载相同CREPES进行定位，并跟踪地面车辆进行绕环轨迹运动。
-          </p>
-          <center>
-            <video width="95%" muted autoplay loop style="border-radius:10px; ">
-                <source src="static/videos/MPC controller.mp4" type="video/mp4"></source>
-                <source src="static/videos/MPC controller.ogg" type="video/ogg"></source>
-                您的浏览器不支持该视频格式
-            </video>
-          </center>
+          <div class="columns is-centered has-text-centered">
+            <img src="static/images/家族化图片2.jfif" style="width: 100%;" alt="">
+          </div>
+          <div class="columns is-centered has-text-centered">
+            <img src="static/images/家族化图片1.png" style="width: 100%;" alt="">
+          </div>
         </div>
       </div>
     </div>
-  <!-- End application. -->
+<!--/ 家族化介绍  -->
 
-  </div>
-</section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre>
-      <code>
-        @misc{xun2023crepes,
-        title={CREPES: Cooperative RElative Pose Estimation System}, 
-        author={Zhiren Xun and Jian Huang and Zhehan Li and Zhenjun Ying and Yingjian Wang and Chao Xu and Fei Gao and Yanjun Cao},
-        year={2023},
-        archivePrefix={IROS}
-        }
-      </code>
-    </pre>
-  </div>
-</section>
 
 <!-- endfooter -->
 <footer class="footer">
